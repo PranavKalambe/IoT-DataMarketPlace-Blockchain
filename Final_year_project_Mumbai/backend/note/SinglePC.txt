@@ -1,0 +1,74 @@
+------------------------------------ Mumbai --------------------------------
+------------ Global ----------------
+geth --datadir globalManager init genesis.json
+
+geth --identity "localB" --http --http.port 9041 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir globalManager --port "30901" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8540 console --allow-insecure-unlock
+
+------------ Local ----------------
+geth --datadir localManager init genesis.json
+
+geth --identity "localB" --http --http.port 8041 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir localManager --port "30301" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8530 console --allow-insecure-unlock
+
+geth --datadir sensor init genesis.json
+
+geth --identity "localB" --http --http.port 8042 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir sensor --port "30302" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8531 console --allow-insecure-unlock
+
+
+------------------------------------ Pune --------------------------------
+------------ Global ----------------
+geth --datadir globalManager init genesis.json
+
+geth --identity "localB" --http --http.port 9042 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir globalManager --port "30902" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8541 console --allow-insecure-unlock
+
+------------ Local ----------------
+geth --datadir localManager init genesis.json
+
+geth --identity "localB" --http --http.port 8051 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir localManager --port "30401" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8532 console --allow-insecure-unlock
+
+geth --datadir sensor init genesis.json
+
+geth --identity "localB" --http --http.port 8052 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir sensor --port "30402" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8533 console --allow-insecure-unlock
+
+
+------------------------------------ Nagpur --------------------------------
+------------ Global ----------------
+geth --datadir globalManager init genesis.json
+
+geth --identity "localB" --http --http.port 9043 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir globalManager --port "30903" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8542 console --allow-insecure-unlock
+
+------------ Local ----------------
+geth --datadir localManager init genesis.json
+
+geth --identity "localB" --http --http.port 8061 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir localManager --port "30501" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8534 console --allow-insecure-unlock
+
+geth --datadir sensor init genesis.json
+
+geth --identity "localB" --http --http.port 8062 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir sensor --port "30502" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8535 console --allow-insecure-unlock
+
+
+-------------------------------- Miner --------------------------
+
+geth --datadir miner init genesis.json
+
+geth --identity "localB" --http --http.port 9044 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir miner --port "30904" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8543 console --allow-insecure-unlock
+
+
+---------------------------------- Commands -----------------------------------
+
+personal.newAccount()
+
+personal.unlockAccount(eth.accounts[0],'1234',0)
+
+admin.nodeInfo.enode
+
+admin.peers
+
+admin.addPeer()
+
+eth.getBalance(eth.accounts[0])
+
+miner.start()
+
+miner.stop()
+
+eth.mining

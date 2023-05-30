@@ -1,0 +1,33 @@
+geth --datadir mumbai init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.51" --http.port 9041 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir mumbai --port "30901" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8540 console --allow-insecure-unlock
+
+"enode://044a9189188a93c120daf34c05ef7d56d32637d6868bd56270d59b00836bf715f97e97f42f6fe3dbb9b676d15b6fbd0e8e9cda58e96e00990c3223014a7c1773@172.17.22.51:30901?discport=0"
+
+
+geth --datadir pune init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.52" --http.port 9042 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir pune --port "30902" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8541 console --allow-insecure-unlock
+
+"enode://0d0b43114bbb17900c2bb4f41706855855cf92f04fcce942c5455e16bac5efa0107bfb60b5eafdbbe5d635b0ef61ac335c9d5991df74a5a4182da55eafaac510@172.17.22.52:30902?discport=0"
+
+geth --datadir nagpur init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.53" --http.port 9043 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir nagpur --port "30903" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8542 console --allow-insecure-unlock
+
+"enode://08f74811360bcc6e66517b2b64fb1bc324ea332b26d4a688d932ee503d312a9a6c7b1bb7f474b92deddbf46f92a4ccb1baec127bb3545dbfb473602cec771791@172.17.22.53:30903?discport=0"
+
+--- Miner ---
+
+geth --datadir miner init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.52" --http.port 9050 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir miner --port "30950" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8550 console --allow-insecure-unlock
+
+
+--- bidder ---
+
+geth --datadir bidder init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.52" --http.port 9052 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir bidder --port "30952" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8552 console --allow-insecure-unlock
+
+
