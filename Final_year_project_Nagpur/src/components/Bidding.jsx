@@ -131,6 +131,8 @@ export default function Bidding() {
     console.log("Bid button clicked");
     console.log(dataID);
     console.log(amount);
+    document.getElementById("dataPutForBid").value="";
+    document.getElementById("dataAvailableForBid").value="";
 
     // d.id, d.sensor, d.dataHash, d.location, d.bid, d.timestamp, d.farmManager, d.bidder, d.bidOpen
 

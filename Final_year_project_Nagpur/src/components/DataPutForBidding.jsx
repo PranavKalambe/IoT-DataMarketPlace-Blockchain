@@ -28,7 +28,8 @@ export default function DataPutForBidding() {
 
     const closeBid = (e) =>{
      e.preventDefault()
-      console.log("data id" , stringToBytes32(data_id))
+      console.log("data id" , stringToBytes32(data_id));
+      document.getElementById(dataPutForBid).value="";
       var closebid = bidContract.methods.closeBid(stringToBytes32(data_id)).encodeABI();;
       console.log("close bid: ", closebid)
       console.log(data_id)
