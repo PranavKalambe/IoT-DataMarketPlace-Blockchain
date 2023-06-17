@@ -207,7 +207,7 @@ const ABI = [{"inputs":[{"internalType":"address","name":"addr","type":"address"
 //   },
 // ];
 
-const bytecode = fs.readFileSync('C:/Users/ASUS/Desktop/LY Project/Code/Final_year_project/backend/ethereum/contracts/build/LocalData_sol_LocalData.bin').toString();
+const bytecode = fs.readFileSync('C:/Users/ASUS/Desktop/LY Project/Code/Final_year_project_Pune/backend/ethereum/contracts/build/LocalData_sol_LocalData.bin').toString();
 
 async function deploy() {
 
