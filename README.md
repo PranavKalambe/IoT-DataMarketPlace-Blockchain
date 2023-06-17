@@ -45,7 +45,7 @@ For configuration of private ethereum networks using geth, the list of ports and
 
 ![Pune Local Network](https://drive.google.com/file/d/1MQCNsTavlR4IK_lTVPIajolxtBXp-BPI/view?usp=drive_link)
 
-![Nagpur Local Networke](https://drive.google.com/file/d/1kMYl521sUk8Brztb3j6SSwMscKydVeYp/view?usp=drive_link)
+![Nagpur Local Network](https://drive.google.com/file/d/1kMYl521sUk8Brztb3j6SSwMscKydVeYp/view?usp=drive_link)
 
 
 ## Web Components  & Flow
