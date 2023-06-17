@@ -50,7 +50,8 @@ For configuration of private ethereum networks using geth, the list of ports and
 
 ## Web Components  & Flow
 
-![Web Flow](https://drive.google.com/file/d/1YE6caTmbOyeqO-nuifiDjBGc2MJqyD2k/view?usp=drive_link)
+![Web Flow](https://github.com/PranavKalambe/IoT-DataMarketPlace-Blockchain/assets/55496966/dd1205e8-43a5-4deb-b1d0-41458973c5c3)
+
 
 ## Demonstartion
 
